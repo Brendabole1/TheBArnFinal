@@ -3,12 +3,7 @@
     margin-bottom: -4em;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 3px;
-}
-
+/*----index----*/
 .jumbotron {
     background-image: url(../img/ovejasthebarn.webp);
     background-size: cover;
@@ -24,42 +19,16 @@
     margin-top: 1em;
     color: rgba(247, 246, 209, 0.97);
     text-shadow: 0 0 4px rgba(159, 154, 119, 0.606);
-    background-color: rgba(124, 184, 130, 0.316);
 }
 
 .jumbotron p {
     font-family: $fontside;
     font-size: 3.2em;
-    margin-left: 1em;
     color: rgba(247, 246, 209, 0.97);
     text-shadow: 0 0 4px rgba(159, 154, 119, 0.606);
-    background-color:  rgba(124, 184, 130, 0.316);
 }
 
-.w6-container {
-    margin-top: 6.0em;
-    padding: 0.5em;
-}
-
-.w3-textcontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.w3-quarter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-
-.w3-dark-grey {
-    color: rgb(6, 65, 30) !important;
-    background-color: rgba(159, 154, 119, 0.606);
-    font-size: $fontside;
-}
-
+/*----servicios---*/
 .container-servicios {
     display: flex;
     margin-top: 1.5em;
