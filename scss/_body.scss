@@ -27,24 +27,11 @@
     color: rgba(247, 246, 209, 0.97);
     text-shadow: 0 0 4px rgba(159, 154, 119, 0.606);
 }
-
-/*----servicios---*/
-.container-servicios {
-    display: flex;
-    margin-top: 1.5em;
-    margin-bottom: 20em;
-    margin-left: 5.5em;
-}
-
+/*----finindex---*/
+/*----thebarn---*/
 .col-sm-8 {
     padding: 1em;
     display: center;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1em;
 }
 
 .w3-container {
@@ -101,7 +88,8 @@
     color: $colortitulo;
     text-align: center;
 }
-
+/*----finthebarn---*/
+/*----iniciaservicios---*/
 .img-servicio {
     margin-top: 1.5em;
     margin-right: -15px;
@@ -136,7 +124,8 @@
     font-family: $fontsidebody;
 
 }
-
+/*----finservicios---*/
+/*----iniciaeventos---*/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
