@@ -42,11 +42,16 @@
   text-shadow: 0 0 4px rgba(159, 154, 119, 0.606);
 }
 
-/*----finindex---*/
 /*----thebarn---*/
 .col-sm-8 {
   padding: 1em;
   display: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
 
 .w3-container {
@@ -54,10 +59,13 @@
   padding: 0.5em;
 }
 
-.fa {
+.icon {
   font-size: 4em;
   color: rgba(89, 156, 89, 0.794);
   padding: 0.2em;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  filter: opacity(2.5);
 }
 
 .w3-center {
@@ -78,14 +86,6 @@
   flex-wrap: wrap;
 }
 
-.flex-item-left {
-  flex: 50%;
-}
-
-.flex-item-right {
-  flex: 50%;
-}
-
 .w3-large {
   font-family: "Alegreya SC", serif;
   font-size: 2rem;
@@ -99,119 +99,90 @@
   padding: 0.2em;
   font-family: "Neucha", cursive;
   font-size: 0.7em;
-  color: rgb(6, 119, 6);
+  color: rgb(92, 142, 92);
   text-align: center;
 }
 
 /*----finthebarn---*/
-/*----iniciaservicios---*/
-.img-servicio {
-  margin-top: 1.5em;
-  margin-right: -15px;
-  margin-bottom: 1em;
+/*----inicioservicio---*/
+.carousel {
+  margin-top: 1em;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  filter: opacity(2.5);
 }
 
-.text-servicio {
-  margin-top: 0.2em;
+.carousel-inner {
+  border-radius: 0.5em;
 }
 
-.card-title {
+.h3 {
+  font-size: "Alegreya SC", serif;
+}
+
+.fa {
+  font-size: 0.8em;
+}
+
+.carta-texto1 {
+  margin-bottom: -0.2em;
+  color: rgb(92, 142, 92);
+  font-family: "Neucha", cursive;
+  font-size: 1.3em;
   text-align: center;
+  font-weight: bold;
+}
+
+.w3-grey1 {
+  background-color: rgba(102, 179, 106, 0.383);
+}
+
+.w3-center1 {
+  font-size: 1em;
+  color: beige;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.w3-container {
+  margin: 1em;
+}
+
+.w3-wide {
+  font-size: 1.1em;
+  font-family: "Neucha", cursive;
+  color: rgb(92, 142, 92);
+  text-align: center;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.row {
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.card-title1 {
+  text-align: left;
   font-size: 2rem;
   font-family: "Alegreya SC", serif;
   -webkit-text-decoration: rgb(95, 158, 95);
           text-decoration: rgb(95, 158, 95);
   color: rgb(6, 119, 6);
   font-weight: bold;
-}
-
-.card-text {
-  font-size: 1.5em;
-  color: rgb(6, 119, 6);
-  font-family: "Neucha", cursive;
+  margin-left: 1.8em;
 }
 
 .card-text1 {
-  margin-top: 2.5em;
+  margin-top: 3em;
+  margin-left: 2em;
   font-size: 1.5em;
   color: rgb(6, 119, 6);
   font-family: "Neucha", cursive;
-}
-
-/*----finservicios---*/
-/*----iniciaeventos---*/
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: " item1 item2" " item1 item3";
-  gap: 1em;
-  padding: 1.5rem;
-}
-
-.grid__item h5,
-.grid__item li {
-  color: rgb(254, 254, 254);
-  font-family: "Neucha", cursive;
-  font-size: 2rem;
-  padding: 0.6rem;
-  margin-top: 2.2rem;
-  text-align: center;
-}
-
-.grid__item {
-  border-radius: 0.5em;
-  background-size: cover;
-  background-position: center center;
-}
-
-.grid__item1 {
-  grid-area: item1;
-}
-
-.grid__item2 {
-  grid-area: item2;
-  background-image: url(../img/fotoevento1.webp);
-}
-
-.grid__item3 {
-  grid-area: item3;
-  background-image: url(../img/fotoevento2.webp);
-}
-
-.nleft {
-  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
-  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
-  background-image: url(../img/foto-frente-con-efecto.webp);
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  margin-top: 3em;
-  margin-bottom: 10em;
-  border-radius: 0.5em;
-}
-
-.nleft:hover {
-  filter: grayscale(1.5);
-}
-
-.nright h2 {
-  font-size: 2rem;
-  margin-top: 2em;
-  color: rgb(20, 117, 20);
-  font-family: "Alegreya SC", serif;
-}
-
-.nright p {
-  font-size: 1.3em;
-  color: rgb(92, 142, 92);
-  font-family: "Neucha", cursive;
-  text-align: justify;
-}
-
-.item {
-  height: 250px;
-  border: 2px solid rgb(19, 18, 16);
 }
 
 .card-img-top {
@@ -234,24 +205,60 @@
   border-radius: 0.5em;
 }
 
-.card-eventos {
-  color: rgb(20, 117, 20);
-  font-family: "Alegreya SC", serif;
-  font-size: 2rem;
-  text-align: right;
-  margin-top: 1em;
-  font-weight: bold;
+/*----finservicios---*/
+/*----inicioevento---*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: " item1 item2" " item1 item3";
+  gap: 1em;
+  padding: 1.5rem;
+  -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
 }
 
-.card-listaeventos li {
-  color: rgb(92, 142, 92);
+.grid__item h5,
+.grid__item li {
+  color: rgb(254, 254, 254);
   font-family: "Neucha", cursive;
-  font-size: 1.3em;
-  text-align: right;
-  list-style: none;
-  margin-top: 1em;
+  font-size: 2rem;
+  padding: 0.6rem;
+  margin-top: 2.2rem;
+  text-align: center;
 }
 
+.grid__item {
+  border-radius: 0.5em;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid__item1 {
+  grid-area: item1;
+}
+.grid__item1:hover {
+  filter: brightness(1.3);
+}
+
+.grid__item2 {
+  grid-area: item2;
+  background-image: url(../img/fotoevento1.webp);
+}
+.grid__item2:hover {
+  filter: brightness(1.3);
+}
+
+.grid__item3 {
+  grid-area: item3;
+  background-image: url(../img/fotoevento2.webp);
+}
+.grid__item3:hover {
+  filter: brightness(1.5);
+}
+
+/*----fineventos---*/
+/*----galeria---*/
 .main-galeria {
   background-color: rgba(188, 168, 144, 0.52);
   width: 1448px;
@@ -266,6 +273,8 @@
   border-radius: 0.5em;
 }
 
+/*----fingaleria---*/
+/*----contacto---*/
 .cc-center {
   color: rgb(20, 117, 20);
   font-family: "Alegreya SC", serif;
@@ -286,7 +295,7 @@
   background-color: rgb(218, 207, 182);
   text-align: center;
   border: none;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .carta-texto {
@@ -545,7 +554,7 @@ footer {
 }
 
 .redes-contacto {
-  margin-top: 1em;
+  margin-top: 0.3em;
 }
 
 .navbar {
